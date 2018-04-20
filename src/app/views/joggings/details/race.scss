@@ -1,0 +1,21 @@
+.image{
+  text-align: center;
+}
+
+.image img{
+  max-height: 500px;
+}
+
+
+@media only screen and (max-device-width:768px)   {
+  .image img{
+    max-height: 400px;
+  }
+}
+
+
+@media only screen and (max-device-width:500px)   {
+  .image img{
+    max-height: 300px;
+  }
+}

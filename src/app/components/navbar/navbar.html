@@ -1,0 +1,11 @@
+<!-- Mobile Navigation-->
+<a class="menu-link" ng-click="navbar.mobileMenu()"><span class="glyphicon glyphicon-align-justify"></span></a>
+<div class="wrapper-menu info-box">
+  <nav  id="menu1" class="site_nav" role="navigation"
+        ng-class="{'mShow':navbar.isMobileShow}"
+        ng-mouseleave="navbar.isMobileShow=false">
+    <a  ng-repeat="item in navbar.itemsInTopMenu" ui-sref-active="active"
+        ng-click="navbar.mobileMenu()"
+        ui-sref="{{item.uisref}}">{{item.name| translate |uppercase}}</a>
+  </nav>
+</div>

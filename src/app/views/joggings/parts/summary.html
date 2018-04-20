@@ -1,0 +1,77 @@
+<div class="container-fluid" ng-controller="SummaryController as summary">
+  <div class="wrapper-load" ng-if="summary.promise.$$state.status != 1">
+    <img class="rotating" src="../assets/images/loader.png" />
+  </div>
+  <div  ng-if="summary.promise.$$state.status == 1"></div>
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <table class="table table-hover wrapper-table">
+        <tbody>
+          <tr>
+            <td>{{summary.countJoggi | translate}}</td>
+            <td>{{joggings.totalRecords}}</td>
+          </tr>
+          <tr>
+            <td>{{summary.totalDistance | translate}}</td>
+            <td>{{joggings.totalDist| number:0}}</td>
+          </tr>
+          <tr>
+            <td>{{summary.totalTime | translate}}</td>
+            <td>{{joggings.totalTm()*1000 | date : "HH:mm:ss": '+0000'}}</td>
+          </tr>
+          <tr>
+            <td>{{summary.firstJogging | translate}}</td>
+            <td>{{summary.fJogging()}}</td>
+          </tr>
+          <tr>
+            <td>{{summary.previousJogging | translate}}</td>
+            <td>{{summary.pJogging()}}</td>
+          </tr>
+        </tbody>
+      </table>
+      <table class="table wrapper-table">
+          <tr><!-- https://developers.google.com/maps/documentation/javascript/directions -->
+            <td class="col-xs-12 col-sm-12 col-md-12 col-lg-12" colspan=2>
+
+              <ng-include src="summary.mapPath"></ng-include>
+
+              <div class="townWrapper">
+                <div class="progress">
+                  <div class="progress-bar progress-bar-striped progress-bar-animated"
+                      role="progressbar" ng-style="{width: summary.getPercent()}">
+                  </div>
+                </div>
+                <div class="cities">
+                  <input ng-repeat-start="item in summary.cities"
+                         ng-model="summary.currentCity"
+                         type="radio" id="town-{{item.id}}"
+                         name="town" class="radio"
+                         ng-click="summary.getSlides()"
+                         value="{{item.id}}">
+                  <label  id="label-for-{{item.id}}" for="town-{{item.id}}"></label>
+                  <div ng-repeat-end class="labelCity" ng-click="summary.getSlides(item.id)" id="labelCity-{{item.id}}">{{item.name | translate}}</div>
+                </div>
+              </div>
+            </td>
+            <!-- Kharkiv 143 (14.0%) Poltava  | Kharkiv 281 (27.7%) Lubny | Kharkiv 482 (47.4%)  Kyiv -->
+            <!-- Kharkiv 616 (60.6%) Zhitomir | Kharkiv 803 (79.0%) Rivne | Kharkiv 1016  Lviv-->
+	  	  <!-- https://www.w3schools.com/cssref/tryit.asp?filename=trycss3_animation-iteration-count -->
+          </tr>
+        </table>
+        <h4>{{summary.aboutCity() | translate}}</h4>
+        <div class="content-box">
+          <ui-carousel
+            slides="summary.slides"
+            slides-to-show="1"
+            slides-to-scroll="1"
+            initial-slide="1"
+            autoplay="false"
+            autoplay-speed="2000"
+            dots="true">
+          <carousel-item>
+            <div class="image"><img src="{{ item.src }}"></div>
+          </carousel-item>
+          </ui-carousel>
+        </div>
+    </div>
+  </div>
+</div>

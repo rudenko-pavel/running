@@ -1,0 +1,67 @@
+{
+  "languages": [
+    {"name":"En", "value": "en"},
+    {"name":"Uk", "value": "uk"},
+    {"name":"Ru", "value": "ru"}
+  ],
+  "itemsInTopMenu" : [
+    {"id": 1, "name":"MAIN PAGE",     "uisref":"home",      "isView": true  },
+    {"id": 2, "name":"JOGGINGS",      "uisref":"joggings",  "isView": true  },
+    {"id": 3, "name":"CONVERSION",    "uisref":"conversion","isView": true  }
+  ],
+  "joggings" : [
+    {"id": 1,   "date":"1506891600000", "distance":2260, "time":1079, "slides": 0 , "isCompetition": false , "parts":[473,483]},
+    {"id": 2,   "date":"1507064400000", "distance":5250, "time":2467, "slides": 0 , "isCompetition": false , "parts":[434,455,466,498,490]},
+    {"id": 3,   "date":"1507237200000", "distance":5230, "time":2377, "slides": 0 , "isCompetition": false , "parts":[418,449,461,478,467]},
+    {"id": 4,   "date":"1507496400000", "distance":5230, "time":2509, "slides": 0 , "isCompetition": false , "parts":[426,475,493,508,488]},
+    {"id": 5,   "date":"1507669200000", "distance":5250, "time":2119, "slides": 0 , "isCompetition": false , "parts":[411,403,401,404,400]},
+    {"id": 6,   "date":"1508706000000", "distance":5160, "time":1994, "slides": 0 , "isCompetition": false , "parts":[389,377,386,392,386]},
+    {"id": 7,   "date":"1508878800000", "distance":5110, "time":2059, "slides": 0 , "isCompetition": false , "parts":[368,395,397,419,437]},
+    {"id": 8,   "date":"1509051600000", "distance":5120, "time":1965, "slides": 0 , "isCompetition": false , "parts":[349,366,392,398,407]},
+    {"id": 9,   "date":"1509919200000", "distance":5200, "time":2009, "slides": 0 , "isCompetition": false , "parts":[368,376,384,395,403]},
+    {"id": 10,  "date":"1510092000000", "distance":5170, "time":1947, "slides": 0 , "isCompetition": false , "parts":[341,370,375,394,396]},
+    {"id": 11,  "date":"1510264800000", "distance":5250, "time":1867, "slides": 0 , "isCompetition": false , "parts":[324,341,351,373,378]},
+    {"id": 12,  "date":"1510524000000", "distance":5220, "time":1852, "slides": 0 , "isCompetition": false , "parts":[318,318,353,362,406]},
+    {"id": 13,  "date":"1510696800000", "distance":5230, "time":1843, "slides": 0 , "isCompetition": false , "parts":[311,352,370,360,372]},
+    {"id": 14,  "date":"1510869600000", "distance":5220, "time":1873, "slides": 0 , "isCompetition": false , "parts":[320,336,357,378,394]},
+    {"id": 15,  "date":"1511042400000", "distance":2740, "time":883,  "slides": 7 , "isCompetition": "https://vseprobegi.org/race/469"  , "parts":[304,325]},
+    {"id": 16,  "date":"1511128800000", "distance":5210, "time":1785, "slides": 0 , "isCompetition": false , "parts":[321,335,354,348,346]},
+    {"id": 17,  "date":"1511301600000", "distance":5360, "time":1803, "slides": 0 , "isCompetition": false , "parts":[318,291,324,356,367]},
+    {"id": 18,  "date":"1511474400000", "distance":5370, "time":1800, "slides": 0 , "isCompetition": false , "parts":[290,316,343,365,365]},
+    {"id": 19,  "date":"1511733600000", "distance":5220, "time":2078, "slides": 0 , "isCompetition": false , "parts":[337,405,424,406,408]},
+    {"id": 20,  "date":"1511906400000", "distance":5060, "time":1989, "slides": 0 , "isCompetition": false , "parts":[360,393,401,407,403]},
+    {"id": 21,  "date":"1512079200000", "distance":5350, "time":1975, "slides": 0 , "isCompetition": false , "parts":[305,367,381,393,386]},
+    {"id": 22,  "date":"1512338400000", "distance":5110, "time":1900, "slides": 0 , "isCompetition": false , "parts":[360,357,375,376,393]},
+    {"id": 23,  "date":"1512684000000", "distance":5310, "time":2090, "slides": 0 , "isCompetition": false , "parts":[343,382,407,412,412]},
+    {"id": 24,  "date":"1512943200000", "distance":5570, "time":2170, "slides": 0 , "isCompetition": false , "parts":[382,391,399,385,382]},
+    {"id": 25,  "date":"1513116000000", "distance":5560, "time":2132, "slides": 0 , "isCompetition": false , "parts":[355,375,388,392,395]},
+    {"id": 26,  "date":"1515535200000", "distance":6420, "time":2364, "slides": 0 , "isCompetition": false , "parts":[348,365,374,368,371,371]},
+    {"id": 27,  "date":"1515967200000", "distance":6170, "time":2214, "slides": 0 , "isCompetition": false , "parts":[337,342,343,359,381,380]},
+    {"id": 28,  "date":"1522616400000", "distance":5050, "time":2151, "slides": 0 , "isCompetition": false , "parts":[331,426,434,459,475]},
+    {"id": 29,  "date":"1522789200000", "distance":5040, "time":2055, "slides": 0 , "isCompetition": false , "parts":[351,385,419,422,460]},
+    {"id": 30,  "date":"1523221200000", "distance":5070, "time":2051, "slides": 0 , "isCompetition": false , "parts":[355,382,421,411,451]}
+  ],
+  "joggingsTh"  : [
+    {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },
+    {"id" : 2  ,"sortField": "date"              ,"name"  : "DATE"      , "class":  "dotted" ,"lessThen500" : false,   "isSort" : true    },
+    {"id" : 3  ,"sortField": "distance"          ,"name"  : "DISTANCE"  , "class":  "dotted" ,"lessThen500" : true,    "isSort" : true    },
+    {"id" : 4  ,"sortField": "time"              ,"name"  : "TIME"      , "class":  ""       ,"lessThen500" : true,    "isSort" : false   },
+    {"id" : 5  ,"sortField": "f.intDistance"     ,"name"  : "RACE"      , "class":  "dotted" ,"lessThen500" : false,   "isSort" : true    },
+    {"id" : 6  ,"sortField": "f.intDistanceTime" ,"name"  : "TIME"      , "class":  "dotted" ,"lessThen500" : false,   "isSort" : true    }
+  ],
+  "chartColors" : [
+    "#2d99e8","rgba(250,109,33,0.7)","rgba(154,154,154,0.5)"
+  ],
+  "paginatorProperty":[
+    {"itemsPerPage":5, "maxSize":3}
+  ],
+  "cities":[
+    {"id" : 1   , "name": "KHARKIV" , "slides": 5 },
+    {"id" : 2   , "name": "POLTAVA" , "slides": 5 },
+    {"id" : 3   , "name": "LUBNY"   , "slides": 5 },
+    {"id" : 4   , "name": "KYIV"    , "slides": 5 },
+    {"id" : 5   , "name": "ZHITOMIR", "slides": 5 },
+    {"id" : 6   , "name": "RIVNE"   , "slides": 5 },
+    {"id" : 7   , "name": "LVIV"    , "slides": 5 }
+  ]
+}

@@ -1,0 +1,178 @@
+/**
+ *  If you want to override some bootstrap variables, you have to change values here.
+ *  The list of variables are listed here bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss
+ */
+ $navbar-inverse-link-color: #5AADBB;
+ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/";
+
+ /**
+  *  Do not remove the comments below. It's the markers used by wiredep to inject
+  *  sass dependencies when defined in the bower.json of your dependencies
+  */
+ // bower:scss
+ // endbower
+
+ @font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../assets/fonts/roboto/Roboto-Regular.ttf');
+ }
+
+ @font-face {
+  font-family: 'uicarousel';
+  src: url("../assets/fonts/uicarousel/ui-carousel.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+ html, body, .hundred{
+  font-family: 'Roboto-Regular', sans-serif;
+   height: 100%;
+   max-height: 100%;
+   font-size: 14px;
+ }
+
+ [class*=" ui-icon-"]::before, [class^="ui-icon-"]::before, [data-icon]::before {
+  font-family: 'uicarousel' !important;
+}
+
+ html{
+  background: url('../assets/images/ngview.png');
+  background-size: cover;
+  min-height: 100%;
+ }
+ body{background: transparent;}
+
+ :focus {
+   outline: none !important;
+   -webkit-box-shadow: none;
+   box-shadow: none;
+ }
+
+ .wrapper>.panel-body >div:focus {
+   border: 1px solid #337ab7;
+    border-radius: 5px;
+ }
+
+ .info-box{
+  background: url("../assets/images/nav-bg.png");
+  border-radius: 5px;
+ }
+
+ .row .info-box{
+   padding: 10px;
+   margin-bottom: 20px;
+ }
+
+ .info-box label{
+   font-weight: 400;
+   line-height: 2.3em;
+  }
+
+ .label-form{
+   text-align: right;
+   padding-right: 0px;
+   height: 34px;
+  }
+
+  .btn-group{
+    border-radius:5px;
+  }
+
+  .arrowup{
+    text-align: right;
+  }
+
+  .badge-success {
+    color: #fff;
+    background-color: #28a745;
+  }
+
+  .marg15{
+    margin-bottom: 15px;
+  }
+
+  .ui-carousel .carousel-btn {
+    font-size: 36px;
+  }
+
+  .carousel-dots li button::before {
+    font-size: 16px;
+    font-family: uicarousel !important;
+  }
+
+.tacenter{text-align: center;}
+
+.wrapper-load{
+  position: fixed;
+  background-color: rgba(70, 70, 70, 0.5);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.wrapper-load img{
+  width: 76px;
+  height: 76px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-left: -38px;
+  margin-top: -38px;
+}
+
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+.rotating {
+  -webkit-animation: rotating 2s linear infinite;
+  -moz-animation: rotating 2s linear infinite;
+  -ms-animation: rotating 2s linear infinite;
+  -o-animation: rotating 2s linear infinite;
+  animation: rotating 2s linear infinite;
+}
+ /**
+  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
+  *  all your sass files automatically
+  */
+ // injector
+ // endinjector
+
+ @media only screen and (max-device-width:768px)   {
+  html, body, .hundred, .btn{
+     font-size: 12px;
+   }
+
+   .btn{padding:4px 8px;}
+
+   .arrowup .btn{
+   left: -15px;
+   position: relative;
+  }
+}

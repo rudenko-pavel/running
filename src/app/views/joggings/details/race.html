@@ -1,0 +1,85 @@
+<div class="container-fluid" ng-controller="RaceController as race">
+  <div class="row">
+    <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3 arrowup">
+      <button class="btn btn-default" ng-click="joggings.joggiPartFunc()">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+      </button>
+    </div>
+    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-6 arrowup">
+      <canvas class="chart chart-bar"
+              chart-data    = "race.chartData"
+              chart-labels  = "race.chartLabels"
+              chart-colors  = "race.chartColors"
+              chart-series  = "race.chartSeries"
+              chart-options = "race.chartOptions">
+      </canvas>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <table class="table table-hover wrapper-table">
+        <thead>
+          <tr>
+            <th ng-repeat="item in joggings.joggingsTh"
+                ng-show="$index!=0" >
+              <span>{{item.name | translate}}</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>{{race.aboutRace($state.params.runID,'date')}}</td>
+            <td>{{race.aboutRace($state.params.runID,'distance')| number:0}}</td>
+            <td>{{race.aboutRace($state.params.runID,'time')}}</td>
+            <td>{{race.intDistance(race.aboutRace($state.params.runID,'distance'))}}</td>
+            <td>{{race.intDistanceTime($state.params.runID)*1000| date : "HH:mm:ss": '+0000'}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table table-hover wrapper-table">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>{{joggings.time | translate}}</th>
+          </tr>
+        </thead>
+        <tbody  ng-repeat="racing in race.joggings | filter:race.parseIntRunId($state.params.runID)">
+          <tr ng-repeat ="part in racing.parts track by $index"
+              ng-class="{'bg-success': race.fastKm($state.params.runID,$index),
+                         'bg-danger': race.slowKm($state.params.runID,$index)}">
+            <td>{{$index+1}}</td>
+            <td> {{part*1000| date : "HH:mm:ss": '+0000'}}</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table class="table wrapper-table" ng-if="race.aboutRace($state.params.runID,'isCompetition')">
+          <thead>
+            <tr>
+              <th>
+                <a target="_blank" ng-href="{{race.aboutRace($state.params.runID,'isCompetition')}}">{{race.aboutRace($state.params.runID,'isCompetition')}}</a>
+              </th>
+            </tr>
+          </thead>
+
+        </table>
+        <div class="content-box">
+        <ui-carousel
+          slides="race.slides"
+          slides-to-show="1"
+          slides-to-scroll="1"
+          initial-slide="1"
+          autoplay="false"
+          autoplay-speed="2000"
+          dots="true">
+        <carousel-item>
+          <div class="image"><img src="{{ item.src }}"></div>
+        </carousel-item>
+        </ui-carousel>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

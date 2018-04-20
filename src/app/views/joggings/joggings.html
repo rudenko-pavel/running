@@ -1,0 +1,13 @@
+<div class="info-box container-fluid">
+  <div class="row navbar">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <div class="up-links">
+        <div class="btn-group">
+          <button ng-click="joggings.joggiPartFunc()" ng-class="{'active': joggings.partViewFlag}" class="btn btn-default">{{joggings.joggingsTxt | translate}}</button>
+          <button ng-click="joggings.summaryPartFunc()" ng-class="{'active': !joggings.partViewFlag}" class="btn btn-default">{{joggings.summaryTxt | translate}}</button>
+        </div>
+      </div>
+      <ng-include src="joggings.partView"></ng-include>
+    </div>
+  </div>
+</div>

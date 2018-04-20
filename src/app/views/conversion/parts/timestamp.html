@@ -1,0 +1,39 @@
+<div class="info-box container-fluid">
+  <div class="row navbar">
+    <form class="form-inline" role="form">
+    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 label-form">
+      <label for="humanDate">{{conversion.date | translate}}: </label>
+    </div>
+    <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+            <md-datepicker
+            ng-model          = "conversion.dateSelect"
+            md-current-view   = "year"
+            ng-change="conversion.dateToTimestamp()">
+      </md-datepicker>
+    </div>
+    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1  label-form">
+      <label for="timestamp" class="">timestamp: </label>
+    </div>
+    <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+      <input type="text" class="form-control" id="timestamp" ng-model="conversion.timestamp" readonly />
+    </div>
+    </form>
+  </div>
+  <div class="row">
+    <form class="form-inline" role="form">
+    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1 label-form">
+      <label for="timestamp2" class="">timestamp: </label>
+    </div>
+    <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+      <input type="text" class="form-control" id="timestamp2" ng-model="conversion.timestamp2"
+             ng-change="conversion.timestampToDate()" />
+    </div>
+    <div class="col-xs-3 col-sm-2 col-md-1 col-lg-1  label-form">
+      <label for="humanDate2" class="">{{conversion.date | translate}}: </label>
+    </div>
+    <div class="col-xs-8 col-sm-4 col-md-3 col-lg-3">
+      <input type="text" class="form-control" id="humanDate2" ng-model="conversion.humanDate2" readonly />
+    </div>
+    </form>
+  </div>
+<div>

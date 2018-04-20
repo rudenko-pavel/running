@@ -1,0 +1,112 @@
+.wrapper-table{
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.wrapper-table, .nav.nav-pills .dropdown,.btn-group{
+  -webkit-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+  -moz-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+  box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+}
+
+.wrapper-table, .wrapper-table th{  text-align: center;}
+
+.wrapper-table thead{
+  background-color: #eee;
+}
+
+.up-links{
+  padding: 15px;
+  text-align: center;
+}
+
+.up-links button{ width:150px;}
+
+.dropdown a{ cursor: pointer;}
+
+.nav > li.dropdown > a {
+  padding: 5px;
+}
+
+.nav.nav-pills .dropdown{
+  width: 170px;
+  border: 1px solid #adadad;
+  border-radius: 5px;
+  margin: 10px 10px 10px 20px;
+  background-color: #e6e6e6;
+}
+
+.wrapper-table th, .wrapper-table td{
+  border-left: 1px solid #ddd;
+}
+
+.nav.nav-pills .caret{
+  position: absolute;
+  right: 0.6em;
+  top: 1em;
+}
+
+.dropdown-menu li.active a{
+  color: #6688fe;
+  background-color: #ddd;
+ }
+
+ .dotted{
+   border-bottom: 1px dotted #333;
+ }
+
+ .dotted.up,.dotted.down   { color:#2e99e6; }
+ .caret-down{
+  border-top: 0px dashed;
+  border-bottom: 4px dashed;
+}
+ .no-sort{cursor: default}
+
+ .md-button.md-icon-button md-icon, button.md-button.md-fab md-icon {
+  color: #2e99e6;
+  }
+
+  .md-button.md-icon-button md-icon:hover, button.md-button.md-fab md-icon:hover {
+    color: #3f51b5;
+  }
+
+  .finisher{
+    background: url('../assets/images/finish.png');
+    background-size: cover;
+  }
+
+  .finisher span{
+    border: 1px solid #4c4c4c;
+    background-color: #fff;
+    border-radius: 10px;
+  }
+
+@media only screen and (max-device-width:768px)   {
+  .container-fluid,  .container-fluid>div {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .table > thead > tr > th,
+  .table > tbody > tr > td{
+    padding: 6px 2px;
+  }
+
+  .up-links button {
+    width: 100px;
+  }
+
+
+}
+
+@media only screen and (max-device-width:500px)   {
+  .less500{display: none;}
+
+  .table > thead > tr > th,
+  .table > tbody > tr > td{
+    padding: 6px 1px;
+  }
+
+}
+

@@ -39,7 +39,9 @@
     {"id": 27,  "date":"1515967200000", "distance":6170, "time":2214, "slides": 0 , "isCompetition": false , "parts":[337,342,343,359,381,380]},
     {"id": 28,  "date":"1522616400000", "distance":5050, "time":2151, "slides": 0 , "isCompetition": false , "parts":[331,426,434,459,475]},
     {"id": 29,  "date":"1522789200000", "distance":5040, "time":2055, "slides": 0 , "isCompetition": false , "parts":[351,385,419,422,460]},
-    {"id": 30,  "date":"1523221200000", "distance":5070, "time":2051, "slides": 0 , "isCompetition": false , "parts":[355,382,421,411,451]}
+    {"id": 30,  "date":"1523221200000", "distance":5070, "time":2051, "slides": 0 , "isCompetition": false , "parts":[355,382,421,411,451]},
+    {"id": 31,  "date":"1523826000000", "distance":5050, "time":2060, "slides": 0 , "isCompetition": false , "parts":[361,395,442,412,428]},
+    {"id": 32,  "date":"1523998800000", "distance":5040, "time":1991, "slides": 0 , "isCompetition": false , "parts":[363,375,376,405,451]}    
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

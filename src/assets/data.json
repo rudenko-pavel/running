@@ -42,7 +42,10 @@
     {"id": 30,  "date":"1523221200000", "distance":5070, "time":2051, "slides": 0 , "isCompetition": false , "parts":[355,382,421,411,451]},
     {"id": 31,  "date":"1523826000000", "distance":5050, "time":2060, "slides": 0 , "isCompetition": false , "parts":[361,395,442,412,428]},
     {"id": 32,  "date":"1523998800000", "distance":5040, "time":1991, "slides": 0 , "isCompetition": false , "parts":[363,375,376,405,451]},
-    {"id": 33,  "date":"1524344400000", "distance":5020, "time":1758, "slides": 7 , "isCompetition": "http://kyivhalfmarathon.org"  , "parts":[310,346,359,341,387]}
+    {"id": 33,  "date":"1524344400000", "distance":5020, "time":1758, "slides": 7 , "isCompetition": "http://kyivhalfmarathon.org"  , "parts":[310,346,359,341,387]},
+    {"id": 34,  "date":"1524603600000", "distance":5020, "time":1991, "slides": 0 , "isCompetition": false , "parts":[397,459,505,464,485]},
+	{"id": 35,  "date":"1526418000000", "distance":5000, "time":2399, "slides": 0 , "isCompetition": false , "parts":[]},
+	{"id": 36,  "date":"1526590800000", "distance":5000, "time":2260, "slides": 0 , "isCompetition": false , "parts":[]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

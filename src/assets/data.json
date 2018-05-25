@@ -45,7 +45,9 @@
     {"id": 33,  "date":"1524344400000", "distance":5020, "time":1758, "slides": 7 , "isCompetition": "http://kyivhalfmarathon.org"  , "parts":[310,346,359,341,387]},
     {"id": 34,  "date":"1524603600000", "distance":5020, "time":1991, "slides": 0 , "isCompetition": false , "parts":[397,459,505,464,485]},
 	{"id": 35,  "date":"1526418000000", "distance":5000, "time":2399, "slides": 0 , "isCompetition": false , "parts":[2399]},
-	{"id": 36,  "date":"1526590800000", "distance":5000, "time":2260, "slides": 0 , "isCompetition": false , "parts":[2260]}
+	{"id": 36,  "date":"1526590800000", "distance":5000, "time":2260, "slides": 0 , "isCompetition": false , "parts":[2260]},
+	{"id": 37,  "date":"1526850000000", "distance":5000, "time":2514, "slides": 0 , "isCompetition": false , "parts":[417,523,493,503,565]},
+	{"id": 38,  "date":"1527109200000", "distance":5000, "time":2378, "slides": 0 , "isCompetition": false , "parts":[2378]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },
@@ -59,7 +61,7 @@
     "#2d99e8","rgba(250,109,33,0.7)","rgba(154,154,154,0.5)"
   ],
   "paginatorProperty":[
-    {"itemsPerPage":5, "maxSize":3}
+    {"itemsPerPage":10, "maxSize":3}
   ],
   "cities":[
     {"id" : 1   , "name": "KHARKIV" , "slides": 5 },

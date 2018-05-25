@@ -44,7 +44,7 @@
           ticks: {
             beginAtZero:false,
             min : 180,
-            max : 540,
+            max : 600,
             stepSize: 60
           }
         }]

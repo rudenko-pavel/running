@@ -6,31 +6,31 @@
     .controller('HomeController', MainController);
 
   /** @ngInject */
-  function MainController( $facebook, $scope, $http,  $resource) {
+  function MainController( $facebook, $scope, $http,  $resource, $log) {
     var vm = this;
 
     $scope.$on('fb.auth.authResponseChange', function() {
-      $scope.status = $facebook.isConnected();
+      vm.status = $facebook.isConnected();
       if($scope.status) {
         $facebook.api('/me').then(function(user) {
-          $scope.user = user;
+          vm.user = user;
         });
       }
     });
 
-    $scope.loginToggle = function() {
+    vm.loginToggle = function() {
       if($scope.status) {
-        console.log('wdwdwdwd');
+        $log.info('wdwdwdwd');
         $facebook.logout();
       } else {
         $facebook.login();
       }
     };
 
-    $scope.getFriends = function() {
+    vm.getFriends = function() {
       if(!$scope.status) return;
       $facebook.cachedApi('/me/friends').then(function(friends) {
-        $scope.friends = friends.data;
+        vm.friends = friends.data;
       });
     }
 
@@ -48,7 +48,7 @@
     function senderNewRow(article){
 
      var success = function(data) {
-        console.log("senderNewRow",data);
+        $log.info("senderNewRow",data);
         vm.data.unshift(data);
         article.title = article.body = null;
         vm.data[2].$remove();

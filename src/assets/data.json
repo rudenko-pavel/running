@@ -43,11 +43,14 @@
     {"id": 31,  "date":"1523826000000", "distance":5050, "time":2060, "slides": 0 , "isCompetition": false , "parts":[361,395,442,412,428]},
     {"id": 32,  "date":"1523998800000", "distance":5040, "time":1991, "slides": 0 , "isCompetition": false , "parts":[363,375,376,405,451]},
     {"id": 33,  "date":"1524344400000", "distance":5020, "time":1758, "slides": 7 , "isCompetition": "http://kyivhalfmarathon.org"  , "parts":[310,346,359,341,387]},
-    {"id": 34,  "date":"1524603600000", "distance":5020, "time":1991, "slides": 0 , "isCompetition": false , "parts":[397,459,505,464,485]},
+    {"id": 34,  "date":"1524603600000", "distance":5020, "time":2324, "slides": 0 , "isCompetition": false , "parts":[397,459,505,464,485]},
 	{"id": 35,  "date":"1526418000000", "distance":5000, "time":2399, "slides": 0 , "isCompetition": false , "parts":[2399]},
 	{"id": 36,  "date":"1526590800000", "distance":5000, "time":2260, "slides": 0 , "isCompetition": false , "parts":[2260]},
-	{"id": 37,  "date":"1526850000000", "distance":5000, "time":2514, "slides": 0 , "isCompetition": false , "parts":[417,523,493,503,565]},
-	{"id": 38,  "date":"1527109200000", "distance":5000, "time":2378, "slides": 0 , "isCompetition": false , "parts":[2378]}
+	{"id": 37,  "date":"1526850000000", "distance":5030, "time":2514, "slides": 0 , "isCompetition": false , "parts":[417,523,493,503,565]},
+	{"id": 38,  "date":"1527109200000", "distance":5000, "time":2378, "slides": 0 , "isCompetition": false , "parts":[2378]},
+	{"id": 39,  "date":"1527195600000", "distance":5160, "time":2370, "slides": 0 , "isCompetition": false , "parts":[424,478,435,463,480]},
+	{"id": 40,  "date":"1528664400000", "distance":5000, "time":2174, "slides": 0 , "isCompetition": false , "parts":[400,418,460,433,459]},
+	{"id": 41,  "date":"1528750800000", "distance":7370, "time":3023, "slides": 0 , "isCompetition": false , "parts":[322,416,430,410,435,418,430]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

@@ -50,7 +50,8 @@
 	{"id": 38,  "date":"1527109200000", "distance":5000, "time":2378, "slides": 0 , "isCompetition": false , "parts":[2378]},
 	{"id": 39,  "date":"1527195600000", "distance":5160, "time":2370, "slides": 0 , "isCompetition": false , "parts":[424,478,435,463,480]},
 	{"id": 40,  "date":"1528664400000", "distance":5000, "time":2174, "slides": 0 , "isCompetition": false , "parts":[400,418,460,433,459]},
-	{"id": 41,  "date":"1528750800000", "distance":7370, "time":3023, "slides": 0 , "isCompetition": false , "parts":[322,416,430,410,435,418,430]}
+	{"id": 41,  "date":"1528750800000", "distance":7370, "time":3023, "slides": 0 , "isCompetition": false , "parts":[322,416,430,410,435,418,430]},
+	{"id": 42,  "date":"1528837200000", "distance":5000, "time":2161, "slides": 0 , "isCompetition": false , "parts":[438,427,435,426,435]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

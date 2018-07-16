@@ -51,7 +51,10 @@
 	{"id": 39,  "date":"1527195600000", "distance":5160, "time":2370, "slides": 0 , "isCompetition": false , "parts":[424,478,435,463,480]},
 	{"id": 40,  "date":"1528664400000", "distance":5000, "time":2174, "slides": 0 , "isCompetition": false , "parts":[400,418,460,433,459]},
 	{"id": 41,  "date":"1528750800000", "distance":7370, "time":3023, "slides": 0 , "isCompetition": false , "parts":[322,416,430,410,435,418,430]},
-	{"id": 42,  "date":"1528837200000", "distance":5000, "time":2161, "slides": 0 , "isCompetition": false , "parts":[438,427,435,426,435]}
+	{"id": 42,  "date":"1528837200000", "distance":5000, "time":2161, "slides": 0 , "isCompetition": false , "parts":[438,427,435,426,435]},
+	{"id": 43,  "date":"1530392400000", "distance":8010, "time":3120, "slides": 5 , "isCompetition": "https://athletic-events.com/events/445" , "parts":[348,374,378,391,387,411,411,406]},
+	{"id": 44,  "date":"1531515600000", "distance":6190, "time":2626, "slides": 0 , "isCompetition": false , "parts":[2626]},
+	{"id": 45,  "date":"1531688400000", "distance":6190, "time":2215, "slides": 0 , "isCompetition": false , "parts":[345,338,353,352,372,385]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

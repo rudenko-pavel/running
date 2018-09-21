@@ -18,6 +18,7 @@
       vm.prolongation.value   - Кількість продовжень
       vm.percentsPath         - Відсотки (false - "До вкладу", true - "На картку")
       vm.tax                  - Податок (false - "Без урахування", true - "З урахуванням")
+      vm.rateYear.value       - актуальний строк депозита
 
       vm.getRateValue         - получение размера процентов +"%";  
       vm.getLengthRate        - получение количества возможных сроков депозита
@@ -157,7 +158,7 @@
 
     function allProlongation(){
       var result;
-      result = vm.sumAdd.value*vm.getLengthRate();
+      result = vm.sumAdd.value*(vm.rateYear.value-1);
       return result; 
     }
     vm.chartLabels = ["Сума вкладу: ", "Сума поповнень: ", "Відсотки (дохід): "];
@@ -178,17 +179,11 @@
     }
 
     function createCanvas(){
-      vm.chartData = [vm.sum.value, vm.sumAdd.value*vm.prolongation.value, 100];
+      vm.chartData = [vm.sum.value,  vm.allProlongation(), vm.investmentsPercents()];
     }
 
-
-    /*$scope.$watch(function(scope) { return vm.sum },
-    function(newValue, oldValue) {
-      console.log("watch:",oldValue,newValue);
-
-    }
-   );*/
-
-    
+    $scope.$watchCollection('[depozit.sum.value,depozit.sumAdd.value,depozit.rateYear.value]', function () {
+      createCanvas();
+    });
   }
 })();

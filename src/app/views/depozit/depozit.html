@@ -137,10 +137,14 @@
                             </div>        
                         </div>
 
-                        <div class="row table-info">
+                        <div class="row">
                             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                                <div style="color:red; text-transform:uppercase">выпадающий список  "вид депозита" не учитывается</div>
                                 <div style="color:red; text-transform:uppercase">формула не учитывает "Кількість продовжень"</div>
                                 <div style="color:red; text-transform:uppercase">формула не учитывает выбранные кнопки в разделах  "Відсотки" и "Податок"</div>
+                                <hr class="green"/>
+                                <div style="color:red; text-transform:uppercase">формула на сайте банка работает неверно )))))))))))))</div>
+                                <div style="color:red; text-transform:uppercase">Пример: 5000 на 3 месяца под 10.5% при кнопках "на карту" и "з урахуванням" - 5000 * 0,1050/12*3 = 131,25 грн.</div>
                             </div>
                         </div>
                     </div>
@@ -163,7 +167,7 @@
                               </div>
 
 
-                            <hr class="green"/>
+                            <hr class="green"/>{{depozit.rateYear.value}}
                             <div class="total-info sum"><span></span>Сума вкладу:<strong> {{depozit.sum.value}} (грн)</strong></div>
                             <div class="total-info sumAdd"><span></span>Сума поповнень:<strong> {{depozit.sumAllAdd()}} (грн)</strong></div>
                             <div class="total-info empty"><span></span>Відсоткова ставка:<strong> {{depozit.getRateValue(depozit.rateYear.value)}} (на рік)</strong></div>

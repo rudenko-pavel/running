@@ -125,7 +125,7 @@
 
     function sumAllAdd(){
       var result;
-      result = vm.sumAdd.value*vm.rateYear.value;
+      result = vm.sumAdd.value*(vm.rateYear.value-1);
       return result;
     }
 

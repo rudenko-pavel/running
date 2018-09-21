@@ -6,10 +6,10 @@
     .controller('HomeController', MainController);
 
   /** @ngInject */
-  function MainController( $facebook, $scope, $http,  $resource, $log) {
+  function MainController( /*$facebook,*/ $scope, $http,  $resource, $log) {
     var vm = this;
 
-    $scope.$on('fb.auth.authResponseChange', function() {
+   /* $scope.$on('fb.auth.authResponseChange', function() {
       vm.status = $facebook.isConnected();
       if($scope.status) {
         $facebook.api('/me').then(function(user) {
@@ -58,6 +58,6 @@
 
      var art = new Article(article);
      art.$save(success);
-    }
+    }*/
   }
 })();

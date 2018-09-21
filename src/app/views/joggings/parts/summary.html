@@ -2,7 +2,7 @@
   <div class="wrapper-load" ng-if="summary.promise.$$state.status != 1">
     <img class="rotating" src="../assets/images/loader.png" />
   </div>
-  <div  ng-if="summary.promise.$$state.status == 1"></div>
+  <div  ng-if="summary.promise.$$state.status == 1">
     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
       <table class="table table-hover wrapper-table">
         <tbody>
@@ -16,7 +16,7 @@
           </tr>
           <tr>
             <td>{{summary.totalTime | translate}}</td>
-            <td>{{joggings.totalTm()*1000 | date : "HH:mm:ss": '+0000'}}</td>
+            <td>{{(joggings.totalTm())/60/60/24| number:0}} дн. {{joggings.totalTm()*1000 | date : " HH:mm:ss": '+0000'}}</td>
           </tr>
           <tr>
             <td>{{summary.firstJogging | translate}}</td>

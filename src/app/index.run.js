@@ -11,7 +11,7 @@
     $log.debug('runBlock end');
 
     // FB 161160107819496
-
+/*
     (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
         if (d.getElementById(id)) return;
@@ -24,6 +24,7 @@
       $rootScope.$on('fb.load', function() { // eslint-disable-line
         $window.dispatchEvent(new Event('fb.load'));
       });
+      */
   }
 
 })();

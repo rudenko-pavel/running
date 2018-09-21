@@ -1,0 +1,87 @@
+
+hr.green{
+    border-top: 1px solid green !important;
+}
+
+.container-fluid.depozit .row>div{
+    border: 0px solid red;
+}
+
+.rz-tick-value, .rz-bubble, .letters{
+    font-size: 1.2em;
+}
+
+.min-text{
+    font-size: 0.9em;
+}
+
+.letters{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.letters.info{
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.table-info{
+    height: 82px;
+    display: block;
+    position: relative;
+    border-bottom: 1px dotted #8eb7dd;
+    padding-top: 15px;
+}
+
+.table-info>div, .layout-row{
+    height:100%;
+}
+
+.right-part{
+    border-left: 1px dotted #8eb7dd !important; 
+}
+
+.row-flex{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.table-info .btn-default {
+    border: 1px solid #98c8e3;
+}
+
+.layout-row>div{
+    text-align: center;
+}
+
+.table-info .form-control.text-primary{
+    color: #337ab7 !important;
+    font-size: 1.2em;
+}
+
+.total-info span {
+    width: 14px;
+    height: 14px;
+    display: block;
+    float: left;
+    margin: 1px 3px 0px 0px;
+}
+
+.total-info.sum span{
+    background:  #97bbcd; 
+}
+
+.total-info.sumAdd span{
+    background:  #dcdcdc; 
+}
+
+.total-info.empty span{
+    opacity: 0;
+}
+
+.total-info.rate span{
+    background:  #f7464a; 
+}

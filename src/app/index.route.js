@@ -29,6 +29,12 @@
         templateUrl: 'app/views/conversion/conversion.html',
         controller: 'ConversionController',
         controllerAs: 'conversion'
+      })
+      .state('depozit', {
+        url: '/depozit',
+        templateUrl: 'app/views/depozit/depozit.html',
+        controller: 'DepozitController',
+        controllerAs: 'depozit'
       });
 
     $urlRouterProvider.otherwise('/');

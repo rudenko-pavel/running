@@ -62,7 +62,9 @@
 	  {"id": 49,  "date":"1536526800000", "distance":10070,"time":3873, "slides": 0 , "isCompetition": false , "parts":[331,374,384,392,402,394,393,395,383,393]},
 	  {"id": 50,  "date":"1536786000000", "distance":10070,"time":4018, "slides": 0 , "isCompetition": false , "parts":[341,372,388,379,409,398,411,437,413,435]},
     {"id": 51,  "date":"1537131600000", "distance":5070, "time":1893, "slides": 0 , "isCompetition": false , "parts":[332,367,367,375,418]},
-    {"id": 52,  "date":"1537390800000", "distance":10080,"time":3781, "slides": 0 , "isCompetition": false , "parts":[338,355,371,359,374,371,374,399,395,412]}
+    {"id": 52,  "date":"1537390800000", "distance":10080,"time":3781, "slides": 0 , "isCompetition": false , "parts":[338,355,371,359,374,371,374,399,395,412]},
+    {"id": 53,  "date":"1537736400000", "distance":5030, "time":1831, "slides": 0 , "isCompetition": false , "parts":[343,351,365,378,376]},
+    {"id": 54,  "date":"1538254800000", "distance":10790, "time":3857, "slides": 6 , "isCompetition": "https://marathon.md/ru/2018results"  , "parts":[317,320,359,375,345,342,349,373,368,393]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

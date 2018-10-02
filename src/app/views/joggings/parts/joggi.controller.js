@@ -6,7 +6,7 @@
     .controller('JoggiController', MainController);
 
   /** @ngInject */
-  function MainController($http, $log, $timeout, recordsFactory) {
+  function MainController($http, $log, $filter, $timeout, recordsFactory) {
     var vm = this;
     vm.bigCurrentPage     = recordsFactory.getBigCurrentPage();            // for paginator
     vm.paramSortBy = '-date';
@@ -45,8 +45,10 @@
     vm.upSort                   = upSort;
     vm.downSort                 = downSort;
     vm.intDistance              = intDistance;
+    vm.realDistance             = realDistance;
     vm.intDistanceTime          = intDistanceTime;
     vm.countSelectedRecords     = countSelectedRecords;
+    vm.countSelectedRecordsDistance = countSelectedRecordsDistance;
     vm.minDateFunc              = minDateFunc;
     vm.maxDateFunc              = maxDateFunc;
     vm.inRange                  = inRange;         // filter of races
@@ -132,6 +134,10 @@
       return Math.floor(distance/1000);
     }
 
+    function realDistance(distance){
+      return distance;
+    }
+
     function intDistanceTime(cId){
       var result = 0;
       if (angular.isDefined(vm.joggings)){
@@ -161,6 +167,26 @@
         }
         vm.countSelectedRows = count;
         return count;
+      }
+    }
+
+    function countSelectedRecordsDistance(){
+      if (angular.isDefined(vm.joggings)){
+        var count = 0;
+        var intDist;
+        var realDistance;
+        var dateRace;
+        var dateSelectFrom      = (new Date(vm.dateSelectFrom)).getTime();
+        var dateSelectTo        = (new Date(vm.dateSelectTo)).getTime();
+        for (var i=0; i<vm.joggings.length; i++){
+          intDist   = vm.intDistance(vm.joggings[i].distance);
+          realDistance   = vm.realDistance(vm.joggings[i].distance);
+          dateRace  = vm.joggings[i].date;
+          if (intDist <= vm.sliderHigh && intDist >= vm.sliderModel &&
+            dateRace <= dateSelectTo && dateRace >= dateSelectFrom ){ count = count+realDistance;}
+        }
+
+        return $filter('number')(count, 0) + " m.";
       }
     }
 

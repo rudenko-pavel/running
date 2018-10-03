@@ -11,8 +11,9 @@
     vm.countJoggi       = "JOGGINGS";
     vm.totalDistance    = "TOTAL DISTANCE";
     vm.totalTime        = "TOTAL TIME";
-    vm.firstJogging     = "FIRST JOGGING"
-    vm.previousJogging  = "PREVIOUS JOGGING"
+    vm.firstJogging     = "FIRST JOGGING";
+    vm.previousJogging  = "PREVIOUS JOGGING";
+    vm.bestResults      = "BEST RESULTS";
     vm.hundred          = 1016;
     vm.slides           = [];
     vm.pathToSlides     = "../assets/images/summary/";

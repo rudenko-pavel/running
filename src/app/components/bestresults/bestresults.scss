@@ -1,0 +1,126 @@
+.helplng.ua, .helplng option[value="ua"]{background: url('../assets/images/flagua.png') 96% / 50% no-repeat #ddd;}
+.helplng.en, .helplng option[value="en"]{background: url('../assets/images/flagen.png') 96% / 50% no-repeat #ddd;}
+.helplng.ru, .helplng option[value="ru"]{background: url('../assets/images/flagru.png') 96% / 50% no-repeat #ddd;}
+
+
+.site_nav{
+  position: relative;
+  z-index: 5000;
+  text-align: center;
+  padding: 0;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.wrapper-menu{
+  position: relative;
+  -webkit-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+  -moz-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+  box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+  text-align: center;
+}
+
+.navbar {
+  margin-bottom: 0px;
+}
+
+.site_nav div{
+  height: 100%;
+  float: left;
+}
+
+.site_nav a{
+  text-decoration: none;
+  line-height: 4em;
+  color: #333;
+  position: relative;
+  margin: 0;
+  padding: 5px 10px;
+  -webkit-transition: 0.5s all ease;
+  -moz-transition: 0.5s all ease;
+  -o-transition: 0.5s all ease;
+  transition: 0.5s all ease;
+}
+
+.site_nav a.active,.site_nav a:hover{
+  color: #0099e6;
+  border-bottom: 1px solid lightgray;
+}
+
+.menu-link{
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top:7px;
+  width: 25px;
+  height: 25px;
+  font-size: 23px;
+  color: #333;
+  z-index: 5432;
+}
+
+
+@media only screen and (max-device-width:768px)   {
+  .menu-link{
+    display: block;
+  }
+
+  .menu-link:hover{
+    color: #555;
+  }
+
+  .site_nav{
+    display: none;
+  }
+
+  .navbar {
+    min-height: 0px;
+  }
+
+  .row .info-box {
+    padding: 10px;
+    margin-top: 20px;
+ }
+
+ .wrapper-menu.info-box {
+  padding: 0px;
+  margin-bottom: 0px;
+}
+
+  .site_nav a {
+    height: 100%;
+    float: left;
+    text-align: left;
+  }
+
+  .site_nav a{
+    padding:3px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .site_nav.mShow{
+    display: block;
+    top: 20px;
+    position: absolute;
+    border-radius: 5px;
+  }
+
+  .site_nav.mShow a{
+    width: 100%
+  }
+
+  .site_nav.mShow{
+    background: url("../assets/images/nav-bg.png");
+    -webkit-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+    -moz-box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+    box-shadow: 0px 2px 4px rgba(3, 3, 3, 0.2);
+    width: 100%;
+  }
+
+  .site_nav a.active,.site_nav a:hover{
+    color: #0099e6;
+    background-color: #eee;
+  }
+
+}

@@ -16,6 +16,7 @@
     vm.dateSelectTo   = new Date();
     vm.minDate;
     vm.maxDate;
+    vm.onlyCompetitions = false;
     //http://plnkr.co/edit/kbZ7EI?p=preview
 
     vm.sliderModel = 1;
@@ -163,7 +164,14 @@
           intDist   = vm.intDistance(vm.joggings[i].distance);
           dateRace  = vm.joggings[i].date;
           if (intDist <= vm.sliderHigh && intDist >= vm.sliderModel &&
-            dateRace <= dateSelectTo && dateRace >= dateSelectFrom ){ count++; }
+            dateRace <= dateSelectTo && dateRace >= dateSelectFrom ){ 
+              if (vm.onlyCompetitions==true){
+                if (vm.joggings[i].isCompetition!=false)
+                  count++;
+              }
+              else  
+                count++; 
+            }
         }
         vm.countSelectedRows = count;
         return count;
@@ -183,7 +191,14 @@
           realDistance   = vm.realDistance(vm.joggings[i].distance);
           dateRace  = vm.joggings[i].date;
           if (intDist <= vm.sliderHigh && intDist >= vm.sliderModel &&
-            dateRace <= dateSelectTo && dateRace >= dateSelectFrom ){ count = count+realDistance;}
+            dateRace <= dateSelectTo && dateRace >= dateSelectFrom ){ 
+              if (vm.onlyCompetitions==true){
+                if (vm.joggings[i].isCompetition!=false)
+                count = count+realDistance;
+              }  
+              else   
+                count = count+realDistance;
+            }
         }
 
         return $filter('number')(count, 0) + " m.";
@@ -219,7 +234,14 @@
       var dateSelectTo        = (new Date(vm.dateSelectTo)).getTime();
       var intDist             = vm.intDistance(item.distance);
       if (intDist <= vm.sliderHigh && intDist >= vm.sliderModel &&
-        item.date <= dateSelectTo && item.date >= dateSelectFrom){ return item; }
+        item.date <= dateSelectTo && item.date >= dateSelectFrom){ 
+          if (vm.onlyCompetitions==true){
+            if (item.isCompetition!=false)
+              return item;
+          }
+          else
+            return item; 
+        }
     }
 
   }

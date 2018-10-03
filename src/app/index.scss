@@ -92,9 +92,47 @@
     background-color: #007bff;
   }
 
+  [role="info"].btn-md { cursor: auto; }
+
   .marg15{
     margin-bottom: 15px;
   }
+
+.withborder>div>div{
+  border: 1px solid #bbbbbb;
+  width: auto;
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.form-group input[type="checkbox"] {
+  display: none;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span {
+  width: 20px;
+}
+
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+  display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+  display: inline-block;   
+}
+
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+  display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+  display: none;   
+}
+
+
+
+.rzslider {
+  width: 90% !important;
+}
 
   .ui-carousel .carousel-btn {
     font-size: 36px;

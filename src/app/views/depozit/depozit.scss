@@ -18,8 +18,8 @@ hr.green{
 .letters{
     margin: 0;
     position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
+    top: 0%;
+    transform: translate(0, 0%);
 }
 
 .letters.info{
@@ -34,6 +34,11 @@ hr.green{
     position: relative;
     border-bottom: 1px dotted #8eb7dd;
     padding-top: 15px;
+}
+
+.col-xs-12 .table-info,.col-sm-12 .table-info{
+    height: auto;
+    padding-bottom: 15px;
 }
 
 .table-info>div, .layout-row{

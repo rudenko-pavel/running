@@ -10,7 +10,7 @@
             <div class="container-fluid depozit">
                 <div class="row row-flex">
                     <!------------ left part start -------------->
-                    <div class="col-sm-9 col-md-9 col-lg-9 col-xl-9">
+                    <div class="col-sm-12 col-md-12 col-lg-9 col-xl-9">
                         <div class="row">
                             <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
                                 <md-select ng-model="depozit.currentPlan" aria-label = "10">
@@ -19,19 +19,19 @@
                             </div>
                         </div>
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
                                         <div class="left-text letters">Строк(міс.)</div>
                                     </div>
-                                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-7">
                                         <article>
                                             <rzslider   rz-slider-model="depozit.rateYear.value"
                                                          rz-slider-options="depozit.rateYear.options">
                                             </rzslider>
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                         <div class="letters info text-primary">{{depozit.getRateValue(depozit.rateYear.value)}}</div>
                                     </div>
                                 </div>
@@ -39,18 +39,18 @@
                         </div>
 
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
                                         <div class="left-text letters">Сума</div>
                                     </div>
-                                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-7">
                                         <article>
                                             <rzslider rz-slider-model="depozit.sum.value"
                                                 rz-slider-options="depozit.sum.options"></rzslider>
                                         </article>
                                     </div>
-                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                             <input type="number" ng-model="depozit.sum.value" class="form-control text-primary" aria-label = "3" aria-controls="sum-slider">
 
                                     </div>
@@ -59,16 +59,16 @@
                         </div>
 
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">                        
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">                        
+                                <div class="row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
                                         <div class="left-text letters">Щомісячне поповнення</div>
                                     </div>
-                                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-7">
                                         <rzslider rz-slider-model="depozit.sumAdd.value"
                                             rz-slider-options="depozit.sumAdd.options"></rzslider>
                                     </div>
-                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                         <input type="number" ng-model="depozit.sumAdd.value" class="form-control text-primary" aria-label = "5" aria-controls="everMonth-slider">
                                         <!--md-input-container>
                                             <input type="number" ng-model="depozit.sumAdd.value"  aria-label = "5" aria-controls="everMonth-slider">
@@ -79,16 +79,16 @@
                         </div>
 
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2">
                                         <div class="left-text letters">Кількість продовжень</div>
                                     </div>
-                                    <div class="col-sm-7 col-md-7 col-lg-7 col-xl-7">
+                                    <div class="col-xs-9 col-sm-9 col-md-10 col-lg-7">
                                             <rzslider rz-slider-model="depozit.prolongation.value"
                                                     rz-slider-options="depozit.prolongation.options"></rzslider>
                                      </div>
-                                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3">
                                         <div class="letters info text-primary">{{depozit.prolongation.value}}</div>
                                     </div>
                                 </div>
@@ -96,18 +96,18 @@
                         </div>
 
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                         <div class="left-text letters">Відсотки</div>
                                     </div>
-                                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
                                         <button type="button" class="btn" 
                                                 ng-click="depozit.percentsPath = !depozit.percentsPath"
                                                 ng-class="{'btn-info': !depozit.percentsPath, 'btn-default': depozit.percentsPath}">До вкладу</button>
                                         <div class="min-text">Збільшується ефективна доходність</div>
                                     </div>
-                                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <div class="col-xs-8 col-xs-offset-4 col-sm-8 col-sm-offset-4 col-md-4 col-lg-4">
                                         <button type="button" class="btn"  
                                                 ng-click="depozit.percentsPath = !depozit.percentsPath"
                                                 ng-class="{'btn-info': depozit.percentsPath, 'btn-default': !depozit.percentsPath}">На картку</button>
@@ -118,17 +118,17 @@
                         </div>
 
                         <div class="row table-info">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
-                                <div layout="row">
-                                    <div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div class="row">
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
                                         <div class="left-text letters">Податок</div>
                                     </div>
-                                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <div class="col-xs-8 col-sm-8 col-md-4 col-lg-4">
                                         <button type="button" class="btn" 
                                         ng-click="depozit.tax = !depozit.tax"
                                         ng-class="{'btn-info': !depozit.tax, 'btn-default': depozit.tax}">Без урахування</button>
                                     </div>
-                                    <div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+                                    <div class="col-xs-8 col-xs-offset-4 col-sm-8 col-sm-offset-4 col-md-4 col-lg-4">
                                         <button type="button" class="btn" 
                                         ng-click="depozit.tax = !depozit.tax"
                                         ng-class="{'btn-info': depozit.tax, 'btn-default': !depozit.tax}">З урахуванням</button>
@@ -138,7 +138,7 @@
                         </div>
 
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                                 <div style="color:red; text-transform:uppercase">выпадающий список  "вид депозита" не учитывается</div>
                                 <div style="color:red; text-transform:uppercase">формула не учитывает "Кількість продовжень"</div>
                                 <div style="color:red; text-transform:uppercase">формула не учитывает выбранные кнопки в разделах  "Відсотки" и "Податок"</div>
@@ -155,12 +155,12 @@
 
 
                     <!------------ right part start -------------->
-                    <div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 right-part">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-3 right-part">
                             <div class="total-info empty"><span></span>Вклав: <strong>{{depozit.investments()}} ГРН.</strong></div>
                             <div class="total-info empty"><span></span>Отримаю: <strong>{{depozit.allMoney()| number : 2}} ГРН.</strong></div>
                             <hr class="green"/>
                             <div>
-                                    <canvas id="doughnut" class="chart chart-doughnut"  width="400" height="400"
+                                    <canvas id="doughnut" class="chart chart-doughnut"  width="100%"
                                             chart-data="depozit.chartData" chart-labels="depozit.chartLabels" 
                                             chart-options="depozit.chartOptions">
                                     </canvas>

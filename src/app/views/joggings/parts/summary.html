@@ -39,8 +39,21 @@
             <td class="col-xs-12 col-sm-12 col-md-12 col-lg-12" colspan=2>
 
               <ng-include src="summary.mapPath"></ng-include>
+              <hr/>
+              <div>
+                <div ng-repeat="item in summary.cities"  style="float:left;">
+                  <input 
+                        ng-model="summary.currentCity"
+                        type="radio" id="city-{{item.id}}"
+                        name="town" class="viewCity"
+                        ng-click="summary.getSlides()"
+                        value="{{item.id}}">
 
-              <div class="townWrapper">
+                  <label class="labelCity" ng-click="summary.getSlides(item.id)" id="labelCity-{{item.id}}">{{item.name | translate}}</label>
+                </div>
+              </div>
+
+              <!--div class="townWrapper">
                 <div class="progress">
                   <div class="progress-bar progress-bar-striped progress-bar-animated"
                       role="progressbar" ng-style="{width: summary.getPercent()}">
@@ -56,7 +69,7 @@
                   <label  id="label-for-{{item.id}}" for="town-{{item.id}}"></label>
                   <div ng-repeat-end class="labelCity" ng-click="summary.getSlides(item.id)" id="labelCity-{{item.id}}">{{item.name | translate}}</div>
                 </div>
-              </div>
+              </div-->
             </td>
             <!-- Kharkiv 143 (14.0%) Poltava  | Kharkiv 281 (27.7%) Lubny | Kharkiv 482 (47.4%)  Kyiv -->
             <!-- Kharkiv 616 (60.6%) Zhitomir | Kharkiv 803 (79.0%) Rivne | Kharkiv 1016  Lviv-->

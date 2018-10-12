@@ -20,9 +20,10 @@
     //http://plnkr.co/edit/kbZ7EI?p=preview
 
     vm.sliderModel = 1;
-    vm.sliderHigh = 10;
-    vm.sliderOptions = {floor:vm.sliderModel, ceil:vm.sliderHigh, showTicksValues:true};
-
+    vm.sliderHigh = 23;
+    vm.sliderOptions = {floor:vm.sliderModel, ceil:vm.sliderHigh};
+    //http://angular-slider.github.io/angularjs-slider/index.html
+    
     vm.promise = $http.get('assets/data.json');
     //console.log(vm.promise);
     vm.promise.success(function(data) {

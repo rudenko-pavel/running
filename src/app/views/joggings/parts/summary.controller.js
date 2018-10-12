@@ -20,28 +20,19 @@
     vm.totalDist        = recordsFactory.getTotalDist();              // total running distance
     vm.currentCity;
 
-    // GOOGLE MAPS API
-    vm.mapPath          = 'app/views/joggings/parts/map.html';
-    vm.origin           = 'kharkiv';
-    vm.destination      = 'lviv';
-    vm.travelMode       = 'DRIVING';
-    vm.centerMap        = '50.4504742,30.5194775';
-    vm.wayPoints = [
-      {location: {lat:49.59373, lng: 34.54073}, stopover: true},
-      {location: {lat:50.01625, lng: 32.99694}, stopover: true},
-      {location: {lat:50.45466, lng: 30.52388}, stopover: true},
-      {location: {lat:50.26487, lng: 28.67669}, stopover: true},
-      {location: {lat:50.62308, lng: 26.22743}, stopover: true}
-    ];
-
-
     vm.promise = $http.get('assets/data.json');
     vm.promise.success(function(data) {
       vm.remoteData            = data;
       vm.joggings              = vm.remoteData.joggings;
       vm.cities                = vm.remoteData.cities;
+      vm.waypoints             = vm.remoteData.waypoints;
     });
 
+
+    // GOOGLE MAPS API
+    vm.mapPath          = 'app/views/joggings/parts/map.html';
+    vm.travelMode       = 'DRIVING';
+    vm.centerMap        = '50.4504742,30.5194775';
 
     // FUNCTION DESCRIPTION
     vm.fJogging               = fJogging;           // date of first jogging
@@ -49,6 +40,9 @@
     vm.getPercent             = getPercent;
     vm.aboutCity              = aboutCity;
     vm.getSlides              = getSlides;
+    vm.numberSegments         = numberSegments;   //количество 10-километровых отрезков
+    vm.createRoute            = createRoute;
+    vm.viewCities             = viewCities;
 
     // IMPLEMENTATION
 
@@ -111,6 +105,31 @@
         }
         return vm.slides;
       }
+    }
+
+    function numberSegments(){
+      var result = Math.floor(vm.totalDist/10000);
+      return result;
+    }
+
+    function createRoute(){
+      var result = [];
+      for (var i=1; i< vm.numberSegments(); i++){
+        if (vm.waypoints[i].city!=0){
+          result.push({location: {lat:vm.waypoints[i].coordinates[0], lng:vm.waypoints[i].coordinates[1]}, stopover: true});
+        }
+      }
+      return result;
+    }
+
+    function viewCities(){
+      var result=1;
+      for (var i=1; i< vm.numberSegments(); i++){
+        if (vm.waypoints[i].city!=0){
+          result++;
+        }
+      }
+      return result;
     }
 
   }

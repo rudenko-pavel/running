@@ -43,6 +43,7 @@
     vm.numberSegments         = numberSegments;   //количество 10-километровых отрезков
     vm.createRoute            = createRoute;
     vm.viewCities             = viewCities;
+    vm.createFullRoute        = createFullRoute;
 
     // IMPLEMENTATION
 
@@ -116,10 +117,20 @@
       var result = [];
       for (var i=1; i< vm.numberSegments(); i++){
         if (vm.waypoints[i].city!=0){
-          result.push({location: {lat:vm.waypoints[i].coordinates[0], lng:vm.waypoints[i].coordinates[1]}, stopover: true});
+          result.push({location: {lat:vm.waypoints[i].coordinates[0], lng:vm.waypoints[i].coordinates[1]}, stopover: false});
         }
       }
       return result;
+    }
+
+    function createFullRoute(){
+      var result = [];
+      for (var i=1; i< vm.waypoints.length; i++){
+        if (vm.waypoints[i].city!=0){
+          result.push({location: {lat:vm.waypoints[i].coordinates[0], lng:vm.waypoints[i].coordinates[1]}, stopover: false});
+        }
+      }
+      return result;  
     }
 
     function viewCities(){

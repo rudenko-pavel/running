@@ -1,5 +1,5 @@
 <div>
-  <ng-map zoom="5" zoom-to-include-markers="false" id="my-map" center="{{summary.centerMap}}" style="height:400px">
+  <ng-map zoom="4" zoom-to-include-markers="false" id="my-map" center="{{summary.centerMap}}" style="height:400px">
   <!--directions
     draggable="false"
     panel="directions-panel"
@@ -8,10 +8,27 @@
     origin="{{summary.origin}}"
     destination="{{summary.destination}}">
   </directions-->
+  <directions 
+  polyline-options='{strokeColor: "blue"}'
+  draggable="false"
+  panel="directions-panel"
+  travel-mode="{{summary.travelMode}}"
+  waypoints="{{summary.createFullRoute()}}"
+  origin="{{summary.waypoints[0].coordinates}}"
+  destination="{{summary.waypoints[summary.waypoints.length-1].coordinates}}">
+  </directions>
+  
+  <custom-marker id="start"
+    position="{{summary.waypoints[0].coordinates}}">
+    <div> Start</div>
+  </custom-marker>
+  <custom-marker id="end"
+    position="{{summary.waypoints[summary.waypoints.length-1].coordinates}}">
+    <div> Finish</div>
+  </custom-marker>
 
-  <directions
-  minZoom= 4
-    maxZoom= 4
+  <directions 
+    polyline-options='{strokeColor: "red"}'
     draggable="false"
     panel="directions-panel"
     travel-mode="{{summary.travelMode}}"
@@ -19,5 +36,17 @@
     origin="{{summary.waypoints[0].coordinates}}"
     destination="{{summary.waypoints[summary.numberSegments()].coordinates}}">
 </directions>
+
+<custom-marker id="start"
+  position="{{summary.waypoints[0].coordinates}}">
+  <div> Start </div>
+</custom-marker>
+
+<custom-marker id="end"
+  position="{{summary.waypoints[summary.numberSegments()].coordinates}}">
+  <div> Current </div>
+</custom-marker>
+
 </ng-map>
+<div class="percent">{{(summary.numberSegments()/summary.waypoints.length)*100 | number:2}} %</div>
 </div>

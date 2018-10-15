@@ -1,0 +1,47 @@
+.custom-marker {
+    font-size: 1.3em;
+    padding: 7px;
+    background: #fff;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: #ea5b4f solid 1px;
+    text-align: center;
+  }
+  
+  .custom-marker:after {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 7px 6px 0;
+    border-color: #fff transparent;
+    display: block;
+    width: 0;
+    z-index: 1;
+    margin-left: -6px;
+    bottom: -6px;
+    left: 50%;
+  }
+  
+  .custom-marker:before {
+    content: '';
+    position: absolute;
+    border-style: solid;
+    border-width: 7px 6px 0;
+    border-color: #ea5b4f transparent;
+    display: block;
+    width: 0;
+    z-index: 0;
+    margin-left: -6px;
+    bottom: -7px;
+    left: 50%;
+  }
+
+  .percent{
+    width:100px;
+    border-radius: 5px;
+    border: 1px solid #F44336;
+    background: rgba(244, 67, 54, 0.15);
+    padding: 7px !important;
+    margin: 10px auto !important;
+  }

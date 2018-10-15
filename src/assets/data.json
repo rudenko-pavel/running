@@ -112,7 +112,19 @@
     {"coordinates" : [50.7391041,25.4019716 ], "city": 0  },
     {"coordinates" : [50.7161238,25.3002909 ], "city": 8  },
     {"coordinates" : [50.656896,25.2134238  ], "city": 0  },
-    {"coordinates" : [50.6040002,25.0944349 ], "city": 0  }    
+    {"coordinates" : [50.6040002,25.0944349 ], "city": 0  },
+    {"coordinates" : [50.5405168,24.8370043 ], "city": 0  },
+    {"coordinates" : [50.4859158,24.7368506 ], "city": 0  },
+    {"coordinates" : [50.4063004,24.6761196 ], "city": 0  },
+    {"coordinates" : [50.3238378,24.6420706 ], "city": 0  },
+    {"coordinates" : [50.2492347,24.5901656 ], "city": 0  },
+    {"coordinates" : [50.1894927,24.4885755 ], "city": 0  },
+    {"coordinates" : [50.1372514,24.379409  ], "city": 0  },
+    {"coordinates" : [50.0633359,24.3324229 ], "city": 0  },
+    {"coordinates" : [49.9955867,24.2524198 ], "city": 0  },
+    {"coordinates" : [49.929401,24.165699   ], "city": 0  },
+    {"coordinates" : [49.8761448,24.0626935 ], "city": 0  },
+    {"coordinates" : [49.8082815,24.019191  ], "city": 9  }    
   ],
   "joggings" : [
     {"id": 1,   "date":"1506891600000", "distance":2260, "time":1079, "slides": 0 , "isCompetition": false , "parts":[473,483]},

@@ -19,7 +19,9 @@
     {"id" : 6   , "name": "NOVOGRAD-VOLYNSKIY"  , "slides": 5 },
     {"id" : 7   , "name": "RIVNE"               , "slides": 5 },
     {"id" : 8   , "name": "LUTSK"               , "slides": 5 },
-    {"id" : 9   , "name": "LVIV"                , "slides": 5 }
+    {"id" : 9   , "name": "LVIV"                , "slides": 5 },
+    {"id" : 10  , "name": "MUKACHEVO"           , "slides": 5 },
+    {"id" : 11  , "name": "UZHGOROD"            , "slides": 5 }
   ],
   "waypoints":[
     {"coordinates" : [49.9906314,36.228588	], "city": 1  },
@@ -124,7 +126,34 @@
     {"coordinates" : [49.9955867,24.2524198 ], "city": 0  },
     {"coordinates" : [49.929401,24.165699   ], "city": 0  },
     {"coordinates" : [49.8761448,24.0626935 ], "city": 0  },
-    {"coordinates" : [49.8082815,24.019191  ], "city": 9  }    
+    {"coordinates" : [49.7706433,24.1120475 ], "city": 9  },
+    {"coordinates" : [49.7489339,24.0147762 ], "city": 0  },
+    {"coordinates" : [49.6588348,24.0019913 ], "city": 0  },
+    {"coordinates" : [49.5698393,23.9908204 ], "city": 0  },
+    {"coordinates" : [49.4993661,23.9718183 ], "city": 0  },
+    {"coordinates" : [49.4106576,23.9415323 ], "city": 0  },
+    {"coordinates" : [49.3300571,23.9066355 ], "city": 0  },
+    {"coordinates" : [49.2505414,23.8601016 ], "city": 0  },
+    {"coordinates" : [49.1929149,23.7552365 ], "city": 0  },
+    {"coordinates" : [49.1211047,23.6726206 ], "city": 0  },
+    {"coordinates" : [49.0832735,23.5778585 ], "city": 0  },
+    {"coordinates" : [49.0237089,23.4922975 ], "city": 0  },
+    {"coordinates" : [48.9831302,23.39501   ], "city": 0  },
+    {"coordinates" : [48.9227314,23.3096309 ], "city": 0  },
+    {"coordinates" : [48.8955154,23.2375687 ], "city": 0  },
+    {"coordinates" : [48.9048723,23.1275776 ], "city": 0  },
+    {"coordinates" : [48.8470292,23.0845136 ], "city": 0  },
+    {"coordinates" : [48.7622337,23.094408  ], "city": 0  },
+    {"coordinates" : [48.698643,23.0440183  ], "city": 0  },
+    {"coordinates" : [48.6139102,23.0580136 ], "city": 0  },
+    {"coordinates" : [48.5606262,22.9903033 ], "city": 0  },
+    {"coordinates" : [48.5245935,22.8796933 ], "city": 0  },
+    {"coordinates" : [48.4773264,22.7777112 ], "city": 0  },
+    {"coordinates" : [48.4585239,22.6548065 ], "city": 10 },
+    {"coordinates" : [48.4907595,22.526379  ], "city": 0  },
+    {"coordinates" : [48.5431244,22.4355695 ], "city": 0  },
+    {"coordinates" : [48.5832646,22.3327195 ], "city": 11 }
+       
   ],
   "joggings" : [
     {"id": 1,   "date":"1506891600000", "distance":2260, "time":1079, "slides": 0 , "isCompetition": false , "parts":[473,483]},

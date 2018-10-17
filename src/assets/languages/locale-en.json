@@ -14,6 +14,7 @@
   "LUBNY"                     : "Lubny",
   "LUTSK"                     : "Lutsk",
   "LVIV"                      : "Lviv",
+  "MUKACHEVO"                 : "Mukachevo",
   "NOVOGRAD-VOLYNSKIY"        : "Novograd-Volynskiy",
   "POLTAVA"                   : "Poltava",
   "PREVIOUS JOGGING"          : "previous jogging",
@@ -24,5 +25,6 @@
   "TIME"                      : "time",
   "TOTAL DISTANCE"            : "total distance",
   "TOTAL TIME"                : "total time",
-  "ZHITOMIR"                  : "Zhitomir"
+  "ZHITOMIR"                  : "Zhitomir",
+  "UZHGOROD"                  : "Uzhgorod"
 }

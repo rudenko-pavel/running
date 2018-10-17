@@ -14,6 +14,7 @@
   "LUBNY"                     : "Лубны",
   "LUTSK"                     : "Луцк",
   "LVIV"                      : "Львов",
+  "MUKACHEVO"                 : "Мукачево",
   "NOVOGRAD-VOLYNSKIY"        : "Новоград-Волынский",
   "POLTAVA"                   : "Полтава",
   "PREVIOUS JOGGING"          : "предыдущая пробежка",
@@ -24,5 +25,6 @@
   "TIME"                      : "время",
   "TOTAL DISTANCE"            : "общая дистанция",
   "TOTAL TIME"                : "общее время",
-  "ZHITOMIR"                  : "Житомир"
+  "ZHITOMIR"                  : "Житомир",
+  "UZHGOROD"                  : "Ужгород"
 }

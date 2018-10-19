@@ -209,8 +209,9 @@
     {"id": 51,  "date":"1537131600000", "distance":5070, "time":1893, "slides": 0 , "isCompetition": false , "parts":[332,367,367,375,418]},
     {"id": 52,  "date":"1537390800000", "distance":10080,"time":3781, "slides": 0 , "isCompetition": false , "parts":[338,355,371,359,374,371,374,399,395,412]},
     {"id": 53,  "date":"1537736400000", "distance":5030, "time":1831, "slides": 0 , "isCompetition": false , "parts":[343,351,365,378,376]},
-    {"id": 54,  "date":"1538254800000", "distance":10790, "time":3857, "slides": 6 , "isCompetition": "https://marathon.md/ru/2018results"  , "parts":[317,320,359,375,345,342,349,373,368,393]},
-    {"id": 55,  "date":"1538859600000", "distance":21770, "time":9274, "slides": 8 , "isCompetition": "https://kyivmarathon.org/"  , "parts":[362,352,373,357,359,350,349,409,388,420,417,463,431,490,548,454,444,479,449,521,452]}
+    {"id": 54,  "date":"1538254800000", "distance":10790,"time":3857, "slides": 6 , "isCompetition": "https://marathon.md/ru/2018results"  , "parts":[317,320,359,375,345,342,349,373,368,393]},
+    {"id": 55,  "date":"1538859600000", "distance":21770,"time":9274, "slides": 8 , "isCompetition": "https://kyivmarathon.org/"  , "parts":[362,352,373,357,359,350,349,409,388,420,417,463,431,490,548,454,444,479,449,521,452]},
+    {"id": 56,  "date":"1539723600000", "distance":5020, "time":2092, "slides": 0 , "isCompetition": false , "parts":[340,397,425,440,478]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

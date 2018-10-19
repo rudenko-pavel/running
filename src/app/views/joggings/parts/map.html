@@ -1,5 +1,5 @@
 <div>
-  <ng-map zoom="4" zoom-to-include-markers="false" id="my-map" center="{{summary.centerMap}}" style="height:500px">
+  <ng-map  zoom-to-include-markers="false" id="my-map" zoom="11"  style="height:500px">
   <!--directions
     draggable="false"
     panel="directions-panel"
@@ -13,14 +13,14 @@
   draggable="false"
   panel="directions-panel"
   travel-mode="{{summary.travelMode}}"
-  waypoints="{{summary.createFullRoute()}}"
-  origin="{{summary.waypoints[0].coordinates}}"
+  waypoints="{{summary.createRemainRoute()}}"
+  origin="{{summary.waypoints[summary.numberSegments()].coordinates}}"
   destination="{{summary.waypoints[summary.waypoints.length-1].coordinates}}">
   </directions>
   
   <custom-marker id="start"
-    position="{{summary.waypoints[0].coordinates}}">
-    <div> Start</div>
+    position="{{summary.waypoints[summary.numberSegments()].coordinates}}">
+    <div> </div>
   </custom-marker>
   <custom-marker id="end"
     position="{{summary.waypoints[summary.waypoints.length-1].coordinates}}">
@@ -39,12 +39,12 @@
 
 <custom-marker id="start"
   position="{{summary.waypoints[0].coordinates}}">
-  <div> Start </div>
+  <div> Start <br>{{summary.fJogging()}}</div>
 </custom-marker>
 
 <custom-marker id="end"
   position="{{summary.waypoints[summary.numberSegments()].coordinates}}">
-  <div> Current </div>
+  <div> Current <br>{{summary.pJogging()}}</div>
 </custom-marker>
 
 </ng-map>

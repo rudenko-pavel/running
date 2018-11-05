@@ -215,7 +215,10 @@
     {"id": 57,  "date":"1539896400000", "distance":5040, "time":2050, "slides": 0 , "isCompetition": false , "parts":[345,381,422,429,449]},
     {"id": 58,  "date":"1540155600000", "distance":5040, "time":2060, "slides": 0 , "isCompetition": false , "parts":[354,400,416,422,445]},
     {"id": 59,  "date":"1540328400000", "distance":5050, "time":1989, "slides": 0 , "isCompetition": false , "parts":[362,382,407,390,423]},
-    {"id": 60,  "date":"1540764000000", "distance":5040, "time":2150, "slides": 0 , "isCompetition": false , "parts":[374,409,428,450,464]}
+    {"id": 60,  "date":"1540764000000", "distance":5040, "time":2150, "slides": 0 , "isCompetition": false , "parts":[374,409,428,450,464]},
+    {"id": 61,  "date":"1540936800000", "distance":5100, "time":2049, "slides": 0 , "isCompetition": false , "parts":[357,373,410,423,444]},
+    {"id": 62,  "date":"1541109600000", "distance":5070, "time":1933, "slides": 0 , "isCompetition": false , "parts":[347,377,395,371,412]},
+    {"id": 63,  "date":"1541196000000", "distance":5130, "time":1801, "slides": 0 , "isCompetition": false , "parts":[327,347,345,367,381]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

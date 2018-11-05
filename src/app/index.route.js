@@ -30,6 +30,12 @@
         controller: 'ConversionController',
         controllerAs: 'conversion'
       })
+      .state('strava', {
+        url: '/strava',
+        templateUrl: 'app/views/strava/strava.html',
+        controller: 'StravaController',
+        controllerAs: 'strava'
+      })
       .state('depozit', {
         url: '/depozit',
         templateUrl: 'app/views/depozit/depozit.html',

@@ -1,5 +1,5 @@
 <!-- best Results -->
-  <table class="table table-hover">
+  <table class="table table-hover">{{bestresults.chartData[0]}}
     <tr ng-repeat="(key, value) in bestresults.bestResultsFunc() track by  $index" ng-if="value>0">
       <td class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
         {{key}} km
@@ -7,6 +7,36 @@
       <td class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
         {{value | secondsToDateTime | date:'HH:mm:ss'}}
       </td>
+      <td>
+        <!-- Trigger the modal with a button -->
+        <button type="button" class="btn btn-info btn-sm" ng-click="bestresults.viewDiagram(key)">diagram</button>
+      </td>
     </tr>
   </table>
 
+  <!-- Modal -->
+  <div class="modal" id="myModal" role="dialog"  ng-class="{'isViewDiagram' : bestresults.currentDistance>0 }">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" ng-click="bestresults.notViewDiagram()">&times;</button>
+          <h4 class="modal-title">{{bestresults.currentDistance}} km</h4>
+        </div>
+        <div class="modal-body">
+
+          <canvas id="line" class="chart chart-line" 
+              chart-data="bestresults.chartData"
+              chart-labels="bestresults.chartLabels" 
+              chart-series="bestresults.chartSeries" 
+              chart-options="bestresults.chartOptions"
+              chart-dataset-override="bestresults.chartDatasetOverride">
+          </canvas>
+
+        </div>
+      </div>
+      <div class="bgModal"></div>
+      
+    </div>
+  </div>

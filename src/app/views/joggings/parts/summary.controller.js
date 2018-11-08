@@ -29,6 +29,8 @@
     });
 
 
+
+
     // GOOGLE MAPS API
     vm.mapPath          = 'app/views/joggings/parts/map.html';
     vm.travelMode       = 'DRIVING';

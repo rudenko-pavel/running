@@ -221,7 +221,12 @@
     {"id": 62,  "date":"1541109600000", "distance":5070, "time":1933, "slides": 0 , "isCompetition": false , "parts":[347,377,395,371,412]},
     {"id": 63,  "date":"1541196000000", "distance":5130, "time":1801, "slides": 0 , "isCompetition": false , "parts":[327,347,345,367,381]},
     {"id": 64,  "date":"1541368800000", "distance":5160, "time":1777, "slides": 0 , "isCompetition": false , "parts":[301,317,345,369,379]},
-    {"id": 65,  "date":"1541541600000", "distance":5050, "time":2055, "slides": 0 , "isCompetition": false , "parts":[314,374,413,450,476]}
+    {"id": 65,  "date":"1541541600000", "distance":5050, "time":2055, "slides": 0 , "isCompetition": false , "parts":[314,374,413,450,476]},
+    {"id": 66,  "date":"1541973600000", "distance":5480, "time":1982, "slides": 0 , "isCompetition": false , "parts":[330,351,360,370,382]},
+	{"id": 67,  "date":"1542405600000", "distance":10050,"time":3801, "slides": 9 , "isCompetition": "https://sportevent.com.ua/events/sumy-autumn2018/" , "parts":[329,345,363,369,375,388,398,415,402,394]},
+	{"id": 68,  "date":"1542578400000", "distance":6030, "time":2211, "slides": 0 , "isCompetition": false , "parts":[323,341,363,375,407,389]},
+	{"id": 69,  "date":"1542751200000", "distance":3030, "time":1213, "slides": 0 , "isCompetition": false , "parts":[365,407,427]},
+	{"id": 70,  "date":"1543356000000", "distance":6070, "time":2566, "slides": 0 , "isCompetition": false , "parts":[428,420,415,425,409,439]}
   ],
   "joggingsTh"  : [
     {"id" : 1  ,"sortField": "id"                ,"name"  : "#"         , "class":  ""       ,"lessThen500" : false,   "isSort" : false   },

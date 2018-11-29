@@ -35,10 +35,34 @@
               display: true,
               position: 'left',
               ticks: {
-                suggestedMin: 0
+                suggestedMin: 0,
+                callback: function(timestm) {
+                  var hours   = Math.floor(timestm / 3600);
+                  var minutes = Math.floor((timestm - (hours * 3600)) / 60);
+                  var seconds = timestm - (hours * 3600) - (minutes * 60);
+
+                  if (hours   < 10) {hours   = "0"+hours;}
+                  if (minutes < 10) {minutes = "0"+minutes;}
+                  if (seconds < 10) {seconds = "0"+seconds;}
+                  return hours+':'+minutes+':'+seconds;
+                }
               }
             }
           ]
+        },
+        tooltips: {
+          callbacks: {
+              label: function(tooltipItem) {
+                var hours   = Math.floor(tooltipItem.yLabel / 3600);
+                var minutes = Math.floor((tooltipItem.yLabel - (hours * 3600)) / 60);
+                var seconds = tooltipItem.yLabel - (hours * 3600) - (minutes * 60);
+
+                if (hours   < 10) {hours   = "0"+hours;}
+                if (minutes < 10) {minutes = "0"+minutes;}
+                if (seconds < 10) {seconds = "0"+seconds;}
+                return hours+':'+minutes+':'+seconds;
+              }
+          }
         }
       }
 

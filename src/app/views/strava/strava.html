@@ -1,8 +1,36 @@
 <div class="container-fluid info-box"  ng-controller="StravaController as strava">
-    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <!--div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div style="margin: 0 auto;     width: max-content;">
             <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/36194446/latest-rides/a080b37222047b03a86b557c457cc05dff852da8'></iframe>
             <iframe height='454' width='300' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/athletes/36194446/activity-summary/a080b37222047b03a86b557c457cc05dff852da8'></iframe>
+        </div >
+        
+    </div -->
+
+
+
+
+    <header>
+        <div class="container text-center">
+            <a href="http://strava.com/athletes/36194446/badge" class="strava-badge- strava-badge-follow" target="_blank"><img src="//badges.strava.com/echelon-sprite-48.png" alt="Strava" /></a>
         </div>
-    </div>
+      </header>
+
+
+      <section class="timeline">
+        <div class="container-fluid">
+            <div class="timeline-item" ng-repeat="item in strava.strava">
+                <div class="timeline-img"></div>
+        
+                <div class="timeline-content" ng-class="strava.timelineClass(item)">
+                    <div class="date">{{item.date| date:'yyyy-MMM-dd'}}</div>
+                    <h5>{{item.title}}</h5>
+                  <p class="strava-img"><img ng-src='../assets/images/strava/{{item.id}}.png' /></p>
+                </div>
+            </div> 
+        </div>
+      </section>
+      
+
+
 </div>

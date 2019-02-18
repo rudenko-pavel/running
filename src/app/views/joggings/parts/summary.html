@@ -41,15 +41,17 @@
               <ng-include src="summary.mapPath"></ng-include>
               <hr/>
               <div class="wrap-labelCity">
-                <div ng-repeat="item in summary.cities" class="labelCity">
+                <div ng-repeat="item in summary.cities" class="labelCity" >
+                    <div  ng-if="item.slides!=0">
                   <input 
                         ng-model="summary.currentCity"
                         type="radio" id="city-{{item.id}}"
                         name="town" class="viewCity"
                         ng-click="summary.getSlides()"
                         value="{{item.id}}">
-
+                        
                   <label ng-click="summary.getSlides(item.id)" id="labelCity-{{item.id}}">{{item.name | translate}}</label>
+                </div>
                 </div>
                 <div style="clear: both;"></div>
               </div>

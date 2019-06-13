@@ -23,9 +23,15 @@
                 <div class="timeline-img"></div>
         
                 <div class="timeline-content" ng-class="strava.timelineClass(item)">
-                    <div class="date">{{item.date| date:'yyyy-MMM-dd'}}</div>
-                    <h5>{{item.title}}</h5>
-                  <p class="strava-img"><img ng-src='../assets/images/strava/{{item.id}}.png' /></p>
+                    <div class="container-fluid">
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">  
+                            <div class="date">{{item.date| date:'yyyy-MMM-dd'}}</div>
+                            <h5>{{item.title}}</h5>
+                        </div>
+                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+                            <p class="strava-img"><img ng-click="strava.openModal(item.id)" ng-src='../assets/images/strava/{{item.id}}.png' style="max-width: 300px;" /></p>
+                        </div>
+                    </div>
                 </div>
             </div> 
         </div>

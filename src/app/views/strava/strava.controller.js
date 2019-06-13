@@ -6,7 +6,7 @@
     .controller('StravaController', MainController);
 
   /** @ngInject */
-  function MainController( $http) {
+  function MainController( $http, $mdDialog) {
     var vm = this;
     vm.title = "strava.html";
 
@@ -27,6 +27,7 @@
 
     // FUNCTION DESCRIPTION
     vm.timelineClass                 = timelineClass;
+    vm.openModal                     = openModal;
 
 
     function timelineClass(item){
@@ -36,5 +37,39 @@
       
       return result;
     }
+
+    function openModal(item){
+      alert = $mdDialog.alert({
+        template: 
+          '<md-dialog>' +
+          '<div style="text-align:center; padding:0px; ">' +
+            '<div><img src="../assets/images/strava/'+item+'.png" style="width:100%;  max-width: 400px; padding:10px;" /></div>'+
+            '<div><hr style="border-top: 1px solid green;"/>'+
+            '    <md-button ng-click="vm.hide()" class="md-primary">' +
+            '      Close' +
+            '    </md-button>' +
+            '</div>' +
+            '</div>'+
+          '</md-dialog>',
+          parent: angular.element(document.body),
+          clickOutsideToClose:true,
+          controller: DialogController,
+          controllerAs: "vm"
+      });     
+      
+      $mdDialog
+      .show( alert )
+      .finally(function() {
+        alert = undefined;
+      });
+
+      function DialogController($scope, $mdDialog) {
+        this.hide = function() {
+          $mdDialog.hide();
+        };
+      }
+    }
+
+
   }
 })();

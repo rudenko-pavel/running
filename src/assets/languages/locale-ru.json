@@ -11,6 +11,8 @@
   "MAIN PAGE" 	              : "главная страница",
   "JOGGING"                   : "пробежка",
   "JOGGINGS"                  : "пробежки",
+  "KHMELNYTSKYI"              : "Хмельницкий",
+  "KROPIVNITSKYI"             : "Кропивницкий",
   "KYIV"                      : "Киев",
   "LUBNY"                     : "Лубны",
   "LUTSK"                     : "Луцк",
@@ -28,5 +30,7 @@
   "TOTAL DISTANCE"            : "общая дистанция",
   "TOTAL TIME"                : "общее время",
   "ZHITOMIR"                  : "Житомир",
-  "UZHGOROD"                  : "Ужгород"
+  "UMAN'"                     : "Умань",
+  "UZHGOROD"                  : "Ужгород",
+  "VINNYTSIA"                 : "Винница"
 }

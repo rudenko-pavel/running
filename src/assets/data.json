@@ -354,7 +354,9 @@
 	{"id": 91,  "date":"1553032800000", "distance":10110,"time":4239, "slides": 0 , "isCompetition": false , "parts":[384,416,407,418,427,422,437,424,441,414]},
 	{"id": 92,  "date":"1553292000000", "distance":14060,"time":5723, "slides": 0 , "isCompetition": false , "parts":[299,393,392,397,398,396,411,408,412,414,415,434,431,437]},
 	{"id": 93,  "date":"1553551200000", "distance":8160, "time":3411, "slides": 0 , "isCompetition": false , "parts":[378,409,417,415,437,421,439,427]},
-	{"id": 94,  "date":"1554584400000", "distance":21550,"time":9195, "slides": 6 , "isCompetition": "https://kyivhalfmarathon.org" , "parts":[334,318,361,362,388,370,383,377,377,412,407,437,460,431,434,480,472,517,540,510,542]}
+	{"id": 94,  "date":"1554584400000", "distance":21550,"time":9195, "slides": 6 , "isCompetition": "https://kyivhalfmarathon.org" , "parts":[334,318,361,362,388,370,383,377,377,412,407,437,460,431,434,480,472,517,540,510,542]},
+	{"id": 95,  "date":"1560891600000", "distance":5030, "time":2234, "slides": 0 , "isCompetition": false , "parts":[412,423,449,451,483]},
+	{"id": 96,  "date":"1561150800000", "distance":5040, "time":2313, "slides": 0 , "isCompetition": false , "parts":[429,453,465,460,485]}
   ],
   "strava" : [
     {"id"  : 1   , "date" : "1541282400000", "title": "TCS New York City Marathon — Virtual 5K"},

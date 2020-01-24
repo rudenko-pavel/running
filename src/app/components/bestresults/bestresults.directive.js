@@ -18,7 +18,7 @@
     return directive;
 
     /** @ngInject */
-    function BestResultsController($http, $timeout) {
+    function BestResultsController($http) {
       var vm = this;
       vm.currentDistance=0;
 
@@ -105,7 +105,7 @@
       }
 
       function viewDiagram(key){
-        console.log('viewDiagram(): ', key);
+        /*console.log('viewDiagram(): ', key);*/
         vm.currentDistance = key;
         var oneRace = 0;
         var tmpLabels = "";

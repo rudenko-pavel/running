@@ -6,7 +6,7 @@
     .controller('DepozitController', MainController);
 
   /** @ngInject */
-  function MainController($http,$scope,$filter) {
+  function MainController($http,$scope) {
     var vm = this;
 
     /* HELPER

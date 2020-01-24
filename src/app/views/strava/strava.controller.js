@@ -6,7 +6,7 @@
     .controller('StravaController', MainController);
 
   /** @ngInject */
-  function MainController( $http, $mdDialog) {
+  function MainController( $http, $mdDialog,$document) {
     var vm = this;
     vm.title = "strava.html";
 
@@ -39,7 +39,7 @@
     }
 
     function openModal(item){
-      alert = $mdDialog.alert({
+      var alert = $mdDialog.alert({
         template: 
           '<md-dialog>' +
           '<div style="text-align:center; padding:0px; ">' +
@@ -51,7 +51,7 @@
             '</div>' +
             '</div>'+
           '</md-dialog>',
-          parent: angular.element(document.body),
+          parent: angular.element($document.body),
           clickOutsideToClose:true,
           controller: DialogController,
           controllerAs: "vm"
@@ -64,7 +64,8 @@
       });
 
       function DialogController($scope, $mdDialog) {
-        this.hide = function() {
+        var vm = this;
+        vm.hide = function() {
           $mdDialog.hide();
         };
       }

@@ -403,7 +403,14 @@
 	  {"id": 140, "date":"1579050000000", "distance":5110, "time":2220, "slides": 0 , "isCompetition": false , "parts":[413,421,438,436,460]},
 	  {"id": 141, "date":"1579222800000", "distance":5090, "time":2301, "slides": 0 , "isCompetition": false , "parts":[402,419,469,468,497]},
 	  {"id": 142, "date":"1579568400000", "distance":10230,"time":4756, "slides": 0 , "isCompetition": false , "parts":[423,444,465,455,444,482,470,495,474,471]},
-	  {"id": 143, "date":"1579741200000", "distance":10230,"time":3116, "slides": 0 , "isCompetition": false , "parts":[406,425,435,422,445,456,456]}
+	  {"id": 143, "date":"1579741200000", "distance":7150, "time":3116, "slides": 0 , "isCompetition": false , "parts":[406,425,435,422,445,456,456]},
+	  {"id": 144, "date":"1579914000000", "distance":7220, "time":3149, "slides": 0 , "isCompetition": false , "parts":[342,426,450,441,467,456,464]},
+	  {"id": 145, "date":"1580173200000", "distance":8060, "time":3735, "slides": 0 , "isCompetition": false , "parts":[419,444,448,475,468,491,473,486]}, 
+	  {"id": 146, "date":"1580346000000", "distance":8050, "time":3579, "slides": 0 , "isCompetition": false , "parts":[402,441,437,450,450,464,457,458]},
+	  {"id": 147, "date":"1580518800000", "distance":10060,"time":4317, "slides": 0 , "isCompetition": false , "parts":[407,441,439,419,445,420,414,420,433,448]},
+	  {"id": 148, "date":"1580778000000", "distance":8170, "time":3798, "slides": 0 , "isCompetition": false , "parts":[436,474,449,475,467,495,466,465]},
+	  {"id": 149, "date":"1580950800000", "distance":8080, "time":3863, "slides": 0 , "isCompetition": false , "parts":[439,482,485,478,484,481,489,489]},
+	  {"id": 150, "date":"1581123600000", "distance":8080, "time":3455, "slides": 0 , "isCompetition": false , "parts":[393,412,433,422,440,434,436,451]}
 	],
 	"strava" : [
 	  {"id"  : 1   , "date" : "1541282400000", "title": "TCS New York City Marathon — Virtual 5K"},
